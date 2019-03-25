@@ -2,6 +2,7 @@
   <div class="card">
     <div class="card-header">Companies</div>
     <div class="card-body">
+      <p>Double click = edit <br> Single click = view employees of the selected company</p>
       <ul class="list-group">
         <Company v-for="company in allCompanies" @selected="select" :class="selectedId===company.id? 'selectedList':''" :key="company.id" :company="company" />
       </ul>

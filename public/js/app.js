@@ -1793,6 +1793,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -38347,6 +38348,8 @@ var render = function() {
     _c("div", { staticClass: "card-header" }, [_vm._v("Companies")]),
     _vm._v(" "),
     _c("div", { staticClass: "card-body" }, [
+      _vm._m(0),
+      _vm._v(" "),
       _c(
         "ul",
         { staticClass: "list-group" },
@@ -38384,7 +38387,18 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("Double click = edit "),
+      _c("br"),
+      _vm._v(" Single click = view employees of the selected company")
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -52029,7 +52043,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_companies_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/companies.js */ "./resources/js/store/modules/companies.js");
-/* harmony import */ var _modules_employees_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/employees.js */ "./resources/js/store/modules/employees.js");
+/* harmony import */ var _modules_employees_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/employees.js */ "./resources/js/store/modules/employees.js");
 
 
 
@@ -52038,7 +52052,7 @@ vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_0__
 /* harmony default export */ __webpack_exports__["default"] = (new vuex__WEBPACK_IMPORTED_MODULE_0__["default"].Store({
   modules: {
     companies: _modules_companies_js__WEBPACK_IMPORTED_MODULE_2__["default"],
-    employees: _modules_employees_js__WEBPACK_IMPORTED_MODULE_4__["default"]
+    employees: _modules_employees_js__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 }));
 
